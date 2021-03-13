@@ -167,26 +167,6 @@ class CoreDataFunctions {
         }
     }
     
-    public func checkIfUserNoteExist(_ id: Int) -> Bool {
-        let managedContext = persistentContainer.viewContext
-        let request: NSFetchRequest<Note> = Note.fetchRequest()
-        request.predicate = NSPredicate(format: "userid == %@", "\(id)")
-        
-        do {
-            let notes: [Note] = try managedContext.fetch(request)
-            
-            if let note = notes.first {
-                return true
-            } else {
-                
-                return false
-            }
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-            return false
-        }
-    }
-    
     public func getUserNote(_ id: Int) -> Note {
         let managedContext = persistentContainer.viewContext
         let request: NSFetchRequest<Note> = Note.fetchRequest()
