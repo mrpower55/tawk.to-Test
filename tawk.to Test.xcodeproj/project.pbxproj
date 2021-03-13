@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		F204832025FBFB4000A91FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204831F25FBFB4000A91FAF /* AppDelegate.swift */; };
 		F204832225FBFB4000A91FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204832125FBFB4000A91FAF /* SceneDelegate.swift */; };
-		F204832425FBFB4000A91FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204832325FBFB4000A91FAF /* ViewController.swift */; };
+		F204832425FBFB4000A91FAF /* UsersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204832325FBFB4000A91FAF /* UsersListVC.swift */; };
 		F204832725FBFB4000A91FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F204832525FBFB4000A91FAF /* Main.storyboard */; };
 		F204832A25FBFB4000A91FAF /* tawk_to_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F204832825FBFB4000A91FAF /* tawk_to_Test.xcdatamodeld */; };
 		F204832C25FBFB4200A91FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F204832B25FBFB4200A91FAF /* Assets.xcassets */; };
 		F204832F25FBFB4200A91FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F204832D25FBFB4200A91FAF /* LaunchScreen.storyboard */; };
 		F204833A25FBFB4200A91FAF /* tawk_to_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204833925FBFB4200A91FAF /* tawk_to_TestTests.swift */; };
 		F204834525FBFB4200A91FAF /* tawk_to_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204834425FBFB4200A91FAF /* tawk_to_TestUITests.swift */; };
+		F204837F25FC04EA00A91FAF /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204837E25FC04EA00A91FAF /* UserListCell.swift */; };
+		F204838825FC0ABE00A91FAF /* UserDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204838725FC0ABE00A91FAF /* UserDetailsVC.swift */; };
+		F204839A25FC153000A91FAF /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204839925FC153000A91FAF /* UserModel.swift */; };
+		F251727025FC179C00D3F1A8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251726F25FC179C00D3F1A8 /* API.swift */; };
+		F251727625FC182400D3F1A8 /* GeneralFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251727525FC182400D3F1A8 /* GeneralFunctions.swift */; };
+		F251728325FC1BDF00D3F1A8 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251728225FC1BDF00D3F1A8 /* extensions.swift */; };
+		F251728825FC2A3200D3F1A8 /* SkeletonDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F251728725FC2A3200D3F1A8 /* SkeletonDisplayable.swift */; };
+		F2E96AEE25FCB2E800CA5AE9 /* CoreDataFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E96AED25FCB2E800CA5AE9 /* CoreDataFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,7 @@
 		F204831C25FBFB4000A91FAF /* tawk.to Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tawk.to Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F204831F25FBFB4000A91FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F204832125FBFB4000A91FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F204832325FBFB4000A91FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F204832325FBFB4000A91FAF /* UsersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListVC.swift; sourceTree = "<group>"; };
 		F204832625FBFB4000A91FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F204832925FBFB4000A91FAF /* tawk_to_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tawk_to_Test.xcdatamodel; sourceTree = "<group>"; };
 		F204832B25FBFB4200A91FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +59,14 @@
 		F204834025FBFB4200A91FAF /* tawk.to TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tawk.to TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F204834425FBFB4200A91FAF /* tawk_to_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tawk_to_TestUITests.swift; sourceTree = "<group>"; };
 		F204834625FBFB4200A91FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F204837E25FC04EA00A91FAF /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		F204838725FC0ABE00A91FAF /* UserDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsVC.swift; sourceTree = "<group>"; };
+		F204839925FC153000A91FAF /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F251726F25FC179C00D3F1A8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		F251727525FC182400D3F1A8 /* GeneralFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralFunctions.swift; sourceTree = "<group>"; };
+		F251728225FC1BDF00D3F1A8 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		F251728725FC2A3200D3F1A8 /* SkeletonDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonDisplayable.swift; sourceTree = "<group>"; };
+		F2E96AED25FCB2E800CA5AE9 /* CoreDataFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +117,15 @@
 		F204831E25FBFB4000A91FAF /* tawk.to Test */ = {
 			isa = PBXGroup;
 			children = (
-				F204831F25FBFB4000A91FAF /* AppDelegate.swift */,
-				F204832125FBFB4000A91FAF /* SceneDelegate.swift */,
-				F204832325FBFB4000A91FAF /* ViewController.swift */,
+				F251727425FC181500D3F1A8 /* General */,
+				F204836B25FBFF7A00A91FAF /* Scences */,
 				F204832525FBFB4000A91FAF /* Main.storyboard */,
 				F204832B25FBFB4200A91FAF /* Assets.xcassets */,
 				F204832D25FBFB4200A91FAF /* LaunchScreen.storyboard */,
 				F204833025FBFB4200A91FAF /* Info.plist */,
 				F204832825FBFB4000A91FAF /* tawk_to_Test.xcdatamodeld */,
+				F204831F25FBFB4000A91FAF /* AppDelegate.swift */,
+				F204832125FBFB4000A91FAF /* SceneDelegate.swift */,
 			);
 			path = "tawk.to Test";
 			sourceTree = "<group>";
@@ -129,6 +146,69 @@
 				F204834625FBFB4200A91FAF /* Info.plist */,
 			);
 			path = "tawk.to TestUITests";
+			sourceTree = "<group>";
+		};
+		F204836A25FBFF6B00A91FAF /* UsersListVC */ = {
+			isa = PBXGroup;
+			children = (
+				F204832325FBFB4000A91FAF /* UsersListVC.swift */,
+				F204837525FC04AA00A91FAF /* cells */,
+			);
+			path = UsersListVC;
+			sourceTree = "<group>";
+		};
+		F204836B25FBFF7A00A91FAF /* Scences */ = {
+			isa = PBXGroup;
+			children = (
+				F204836A25FBFF6B00A91FAF /* UsersListVC */,
+				F204838625FC0A9C00A91FAF /* UserDetailsVC */,
+			);
+			path = Scences;
+			sourceTree = "<group>";
+		};
+		F204837525FC04AA00A91FAF /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				F204837E25FC04EA00A91FAF /* UserListCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		F204838625FC0A9C00A91FAF /* UserDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				F204838725FC0ABE00A91FAF /* UserDetailsVC.swift */,
+			);
+			path = UserDetailsVC;
+			sourceTree = "<group>";
+		};
+		F204839825FC152500A91FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F204839925FC153000A91FAF /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F251726E25FC179000D3F1A8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F251726F25FC179C00D3F1A8 /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F251727425FC181500D3F1A8 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				F251726E25FC179000D3F1A8 /* API */,
+				F204839825FC152500A91FAF /* Models */,
+				F251727525FC182400D3F1A8 /* GeneralFunctions.swift */,
+				F251728225FC1BDF00D3F1A8 /* extensions.swift */,
+				F251728725FC2A3200D3F1A8 /* SkeletonDisplayable.swift */,
+				F2E96AED25FCB2E800CA5AE9 /* CoreDataFunctions.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +341,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F204832425FBFB4000A91FAF /* ViewController.swift in Sources */,
+				F204838825FC0ABE00A91FAF /* UserDetailsVC.swift in Sources */,
+				F204837F25FC04EA00A91FAF /* UserListCell.swift in Sources */,
+				F204832425FBFB4000A91FAF /* UsersListVC.swift in Sources */,
 				F204832A25FBFB4000A91FAF /* tawk_to_Test.xcdatamodeld in Sources */,
 				F204832025FBFB4000A91FAF /* AppDelegate.swift in Sources */,
+				F251728325FC1BDF00D3F1A8 /* extensions.swift in Sources */,
+				F2E96AEE25FCB2E800CA5AE9 /* CoreDataFunctions.swift in Sources */,
 				F204832225FBFB4000A91FAF /* SceneDelegate.swift in Sources */,
+				F251727025FC179C00D3F1A8 /* API.swift in Sources */,
+				F204839A25FC153000A91FAF /* UserModel.swift in Sources */,
+				F251728825FC2A3200D3F1A8 /* SkeletonDisplayable.swift in Sources */,
+				F251727625FC182400D3F1A8 /* GeneralFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
