@@ -29,7 +29,10 @@ class UserDetailsVC: UIViewController, SkeletonDisplayable {
         notes.layer.borderColor = UIColor.black.cgColor
         
         userDetails = CoreDataFunctions.shared.getUser(userDetails?.id ?? 0)
-        notes.text = CoreDataFunctions.shared.getUserNote(userDetails?.id ?? 0).note
+        if CoreDataFunctions.shared.checkIfUserNoteExist(userDetails?.id ?? 0) {
+            notes.text = CoreDataFunctions.shared.getUserNote(userDetails?.id ?? 0).note
+        }
+        
         
         self.displayUserDetails()
         
